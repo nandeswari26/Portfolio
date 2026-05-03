@@ -129,3 +129,12 @@ function showSuccessPopup(e) {
         alert("❌ Something went wrong. Please try again.");
     });
 }
+
+if (response.ok) {
+    popup.classList.remove("hidden");
+    form.reset();
+
+    setTimeout(() => {
+        popup.classList.add("hidden");
+    }, 3000);
+}
